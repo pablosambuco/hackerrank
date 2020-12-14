@@ -8,10 +8,6 @@ import random
 import re
 import sys
 
-def p(c):
-   for yy in c:
-      print(yy)
-
 # Complete the crosswordPuzzle function below.
 def crosswordPuzzle(crossword, words):
     palabras=words.split(';')
@@ -104,15 +100,18 @@ def crosswordPuzzle(crossword, words):
 
     return crossword
 
-if __name__ == '__main__':
-    crossword = []
+# ++H+F+++++++++
+# +RINOCERONTE++
+# ++E+C++++++L++
+# ++N+AGUILA+E++
+# ++A++++++++F++
+# +++++++++++A++
+# +++++++++++N++
+# +++++++++++T++
+# +++++++++++E++
 
-    for _ in range(10):
-        crossword_item = input()
-        crossword.append(crossword_item)
-
-    words = input()
-
-    result = crosswordPuzzle(crossword, words)
-    p(result)
-    #print(result)
+crossword = ["++-+-+++++++++","+-----------++","++-+-++++++-++","++-+------+-++","++-++++++++-++","+++++++++++-++","+++++++++++-++","+++++++++++-++","+++++++++++-++"]
+words = "AGUILA;RINOCERONTE;ELEFANTE;HIENA;FOCA"
+result = crosswordPuzzle(crossword, words)
+for x in result:
+   print(x)
