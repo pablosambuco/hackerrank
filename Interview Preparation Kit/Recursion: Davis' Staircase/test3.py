@@ -18,7 +18,7 @@ def calcular(n):
    return int(combinations[n-1]) % 10000000007
 
 t1 = datetime.datetime.now()
-for a in range(1,2000):
+for a in range(1,5001):
    calcular(a)
    t2 = datetime.datetime.now()
    d = t2 - t1
